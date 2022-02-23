@@ -17,7 +17,7 @@ function onLoginSubmit(event) {
   localStorage.setItem(USERNAME_KEY, username);
   // greeting.innerText = 'Hello ' + username;
   // paintGreetings 호출하기
-  paintGreetings(username)
+  paintGreetings(username);
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
@@ -41,5 +41,5 @@ if (savedUsername === null) {
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   // show the greetings
-  paintGreetings(savedUsername)
+  paintGreetings(savedUsername);
 }
